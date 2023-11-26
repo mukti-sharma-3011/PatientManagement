@@ -1,9 +1,18 @@
 package com.admission.hospital.PatientManagement.payloads;
 
+import org.antlr.v4.runtime.misc.NotNull;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+
 public class StaffDto {
 	private String staffId;
 	private String name;
+	@NotEmpty
+	@NotBlank
 	private String employmentNumber;
+	@NotEmpty
+	@NotBlank
 	private String password;
 	private String about;
 	public StaffDto() {

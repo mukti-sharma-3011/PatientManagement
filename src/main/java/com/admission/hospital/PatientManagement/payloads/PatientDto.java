@@ -4,14 +4,31 @@ import java.util.Date;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+
 public class PatientDto {
 	private Integer patientId;
+	@NotEmpty
+	@NotBlank
 	private String name;
+	@NotEmpty
+	@NotBlank
 	private Integer age;
+	@NotEmpty
+	@NotBlank
 	private String room;
+	@NotEmpty
+	@NotBlank
 	private String doctorName;
+	@NotEmpty
+	@NotBlank
 	private Date admissionDate;
+	@NotEmpty
+	@NotBlank
 	private Integer expenses;
+	@NotEmpty
+	@NotBlank
 	private String status;
 	public PatientDto() {
 		super();
